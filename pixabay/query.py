@@ -5,7 +5,7 @@
 
 import requests
 from .image import image
-from .video import video
+from .video_override import video_o
 import urllib.parse
 
 class query:
@@ -36,7 +36,7 @@ class query:
         if not(self._inCache(index)):
             self._addToChache(index)
         if 'videos' in self.params.host:
-            return video(self.cache[index])
+            return video_o(self.cache[index])
         else:
             return image(self.cache[index])
 

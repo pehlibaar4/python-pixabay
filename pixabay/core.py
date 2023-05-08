@@ -7,7 +7,7 @@ import requests
 from .params import params
 from .query  import query as queryCore
 from .image  import image as imageCore
-from .video  import video as videoCore
+from .video_override  import video_o as videoCore
 
 class core:
     ##
