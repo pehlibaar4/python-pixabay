@@ -74,3 +74,8 @@ class video_o(video):
     # Get Size of tiny Video
     def gettinyVideoSize(self):
         return self._raw_data['videos']['tiny']['size']
+    
+    ##
+    # Get url of image of author of video
+    def getUserImageURL(self):
+        return self._raw_data['userImageURL']
